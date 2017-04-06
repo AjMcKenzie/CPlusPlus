@@ -8,7 +8,7 @@
 int main()
 {
 	
-	std::string orchestra_Seats, MainFloor_Seats, Balcony_Seats;
+	int orchestra_Seats, mainFloor_Seats, balcony_Seats, orchestra_Seats_Cost, mainFloor_Seats_Cost, balcony_Seats_Cost, allSeats;
 
 
 
@@ -16,9 +16,25 @@ int main()
 	std::cin >> orchestra_Seats;
 
 	std::cout << "Please enter how many tickets sold for Main Floor: ";
-	std::cin >> MainFloor_Seats;
+	std::cin >> mainFloor_Seats;
 
 	std::cout << "Please enter how many tickets sold for Balcony: ";
-	std::cin >> Balcony_Seats;
+	std::cin >> balcony_Seats;
 
+	orchestra_Seats_Cost = orchestra_Seats * 25;
+	mainFloor_Seats_Cost = mainFloor_Seats * 30;
+	balcony_Seats_Cost = balcony_Seats * 15;
+	allSeats = orchestra_Seats_Cost + mainFloor_Seats_Cost + balcony_Seats_Cost;
+
+	std::cout << " " << std::endl;
+	std::cout << "For the Orchestra seats the cost is $" << orchestra_Seats_Cost << "."<< std::endl;
+	std::cout << "For the Main Floor seats the cost is $" << mainFloor_Seats_Cost << "." << std::endl;
+	std::cout << "For the Balcony seats the cost is $" << balcony_Seats_Cost << "." << std::endl;
+	std::cout << " "<< std::endl;
+	std::cout << "The total over all is $" << allSeats << "." << std::endl;
+
+
+
+	system("pause");
+	return 0;
 }
