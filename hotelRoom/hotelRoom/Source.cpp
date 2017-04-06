@@ -28,7 +28,7 @@ int main()
 
 	std::cout << "They have to pay $" << perNightRate << " for rent" << std::endl;
 	std::cout << "They have to pay $" << serviceCharge << " for the room service." << std::endl;
-	std::cout << "They have to pay $" << phoneCharge << " for the phone bill." << std::endl;
+	std::cout << "They have to pay $" << phoneCharge << "0 for the phone bill." << std::endl;
 	std::cout << "" << std::endl;
 	std::cout << "Their total bill comes to $" << grandTotal << "." << std::endl;
 
