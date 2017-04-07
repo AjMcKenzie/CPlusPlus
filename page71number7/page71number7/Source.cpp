@@ -1,4 +1,4 @@
-//
+//Convert USD into Pounds
 //Andrew McKenzie
 //Date:
 
