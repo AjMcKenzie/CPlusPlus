@@ -11,38 +11,36 @@ int main()
 	int order;
 
 	double burritoPrice = 1.99; //Burrito
-	double burritosOrdered;
+	double burritosOrdered = NULL;
 
 	double tacoPrice = 0.99; //Taco
-	double tacosOrdered;
+	double tacosOrdered = NULL;
 
 	double popPrice = 0.99; //Pop (Mt. Dew)
-	double popOrdered;
+	double popOrdered = NULL;
 
 	double churrosPrice = 2.00; //Churro
-	double churrosOrdered;
+	double churrosOrdered = NULL;
 
 	double tamalesPrice = 1.50; //Tamales
-	double tamalesOrdered;
+	double tamalesOrdered = NULL;
 
 	double tacoSaladPrice = 2.50; //Taco Salad
-	double tacoSaladsOrdered;
+	double tacoSaladsOrdered = NULL;
 
 	double chipsSalsaPrice = 1.00; //Chips & Salsa
-	double chipsSalsaOrdered;
+	double chipsSalsaOrdered = NULL;
 
 	double taquitosPrice = 1.50; //Taquitos
-	double taquitosOrdered;
+	double taquitosOrdered = NULL;
 
 	double chimichangaPrice = 2.00; //Chimichanga
-	double chimichangasOrdered;
+	double chimichangasOrdered = NULL;
 
 	double potatoOlePrice = 1.50; //Potato Ole
-	double potatoOlesOrdered;
+	double potatoOlesOrdered = NULL;
 
 	const double taxRate = 1.075;
-
-	double tacoTotal, burritoTotal, drinkTotal;
 
 	double totalPrice;
 	double totalPriceWithTax;
@@ -115,96 +113,102 @@ int main()
 
 	//How many...
 
-	std::cout << "Please slect the number of the order you want. ";
+	std::cout << "Please select the number of the order you want,\nin chronological order of the menu. ";
 	std::cin >> order;
+	std::cout << " " << std::endl;
 
 	if (order == 1)
 	{
 		std::cout << "How many Tacos do you want? " << std::endl;
 		std::cin >> tacosOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
+		std::cout << " " << std::endl;
 	}
 
 	if (order == 2)
 	{
 		std::cout << "How many Burritos do you want? " << std::endl;
 		std::cin >> burritosOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
+		std::cout << " " << std::endl;
 	}
 
 	if (order == 3)
 	{
 		std::cout << "How many Mt. dews do you want? " << std::endl;
 		std::cin >> popOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
+		std::cout << " " << std::endl;
 	}
 
 	if (order == 4)
 	{
 		std::cout << "How many churros do you want? " << std::endl;
 		std::cin >> churrosOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
+		std::cout << " " << std::endl;
 	}
 
 	if (order == 5)
 	{
 		std::cout << "How many tamales do you want? " << std::endl;
 		std::cin >> tamalesOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
+		std::cout << " " << std::endl;
 	}
 
 	if (order == 6)
 	{
 		std::cout << "How many containers of taco salad do you want? " << std::endl;
 		std::cin >> tacoSaladsOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
+		std::cout << " " << std::endl;
 	}
 
 	if (order == 7)
 	{
 		std::cout << "How many bowls of chips & salsa do you want? " << std::endl;
 		std::cin >> chipsSalsaOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
+		std::cout << " " << std::endl;
 	}
 
 	if (order == 8)
 	{
 		std::cout << "How many taquitos do you want? " << std::endl;
 		std::cin >> taquitosOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
+		std::cout << " " << std::endl;
 	}
 
 	if (order == 9)
 	{
 		std::cout << "How many chimichanga do you want? " << std::endl;
 		std::cin >> chimichangasOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
+		std::cout << " " << std::endl;
 	}
 
 	if (order == 10)
 	{
 		std::cout << "How many containers of potato oles do you want? " << std::endl;
 		std::cin >> potatoOlesOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number <10 to stop. ";
+		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
-	}
-	else
-	{
-
-
-
 		std::cout << " " << std::endl;
-
-
+	}
+	else if (order > 10)
+	{
+	
 		//Math
 
 		totalPrice = (burritosOrdered * burritoPrice) + (tacoPrice * tacosOrdered) + (popOrdered * popPrice)
@@ -222,7 +226,7 @@ int main()
 
 		std::cout << "You ordered " << tacosOrdered << " tacos, " << burritosOrdered << " burritos, " << popOrdered << " Mt. Dews, " << churrosOrdered << " churros, \n" << tamalesOrdered << " tamales, "
 			<< tacoSaladsOrdered << " containers of taco salad, " << chipsSalsaOrdered << " bowls of chips & salsa, \n" << taquitosOrdered << " taquitos, "
-			<< chimichangasOrdered << " chimichangas, and " << potatoOlesOrdered << " containers of potato oles, for a total of \n$"
+			<< chimichangasOrdered << " chimichangas, and " << potatoOlesOrdered << " containers of potato oles, \nfor a total of $"
 			<< totalPrice << std::endl;
 
 		std::cout << " " << std::endl;
