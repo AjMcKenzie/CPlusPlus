@@ -121,7 +121,7 @@ int main()
 	{
 		std::cout << "How many Tacos do you want? " << std::endl;
 		std::cin >> tacosOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
@@ -130,7 +130,7 @@ int main()
 	{
 		std::cout << "How many Burritos do you want? " << std::endl;
 		std::cin >> burritosOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
@@ -139,7 +139,7 @@ int main()
 	{
 		std::cout << "How many Mt. dews do you want? " << std::endl;
 		std::cin >> popOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
@@ -148,7 +148,7 @@ int main()
 	{
 		std::cout << "How many churros do you want? " << std::endl;
 		std::cin >> churrosOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
@@ -157,7 +157,7 @@ int main()
 	{
 		std::cout << "How many tamales do you want? " << std::endl;
 		std::cin >> tamalesOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
@@ -166,7 +166,7 @@ int main()
 	{
 		std::cout << "How many containers of taco salad do you want? " << std::endl;
 		std::cin >> tacoSaladsOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
@@ -175,7 +175,7 @@ int main()
 	{
 		std::cout << "How many bowls of chips & salsa do you want? " << std::endl;
 		std::cin >> chipsSalsaOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
@@ -184,7 +184,7 @@ int main()
 	{
 		std::cout << "How many taquitos do you want? " << std::endl;
 		std::cin >> taquitosOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
@@ -193,7 +193,7 @@ int main()
 	{
 		std::cout << "How many chimichanga do you want? " << std::endl;
 		std::cin >> chimichangasOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
@@ -202,7 +202,7 @@ int main()
 	{
 		std::cout << "How many containers of potato oles do you want? " << std::endl;
 		std::cin >> potatoOlesOrdered;
-		std::cout << "Please slect the number of the order you want. Type a number greater than 10! ";
+		std::cout << "Please select the number of the order you want. Type a number greater than 10! ";
 		std::cin >> order;
 		std::cout << " " << std::endl;
 	}
