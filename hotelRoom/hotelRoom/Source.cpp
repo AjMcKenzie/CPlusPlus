@@ -1,30 +1,50 @@
 //Hotel Rooms
 //Andrew McKenzie
-//Date:
+//Date: 4/13/2017
 
 #include <iostream>
 #include <string>
 
 int main()
 {
-	int perNightRate, serviceCharge, amountOfNights, totalAmount, perMinutes, serviceYES_NO, grandTotal;
-	double phoneCharge;
+	double phoneCharge, perMinutes = 0, totalAmount, grandTotal, perNightRate, amountOfNights, serviceCharge;
+	int extraNight = 0;
+	std::string anotherNight_Yes_No, serviceYES_NO;
+	
+	
+		std::cout << "How many nights did they stay? " << std::endl;
+		std::cin >> amountOfNights;
 
+		std::cout << "Did they pay for service? " << std::endl;
+		std::cin >> serviceYES_NO;
 
-	std::cout << "How many nights did they stay? " << std::endl;
-	std::cin >> amountOfNights;
+		std::cout << "How many minutes were they on the phone? " << std::endl;
+		std::cin >> perMinutes;
 
-	std::cout << "How many times did they pay for service? " << std::endl;
-	std::cin >> serviceYES_NO;
+	do
+	{
+		std::cout << "Did they spend another night?" << std::endl;
+		std::cin >> anotherNight_Yes_No;
+		extraNight = extraNight + 100;
 
-	std::cout << "How many minutes were they on the phone? " << std::endl;
-	std::cin >> perMinutes;
+	} while (anotherNight_Yes_No == "Yes");
 
-	serviceCharge = serviceYES_NO * 35;
-	phoneCharge = perMinutes * .25;
-	perNightRate = amountOfNights * 100;
-	totalAmount = perNightRate +  serviceCharge;
-	grandTotal = totalAmount + phoneCharge;
+	if (serviceYES_NO == "Yes")
+	{
+		perNightRate = amountOfNights * 100 + extraNight;
+		serviceCharge = 35;
+		totalAmount = perNightRate + serviceCharge;
+		phoneCharge = perMinutes * .25;
+		grandTotal = totalAmount + phoneCharge;
+	}
+	else
+	{
+		phoneCharge = perMinutes * .25;
+		perNightRate = amountOfNights * 100 + extraNight;
+		grandTotal = perNightRate + phoneCharge;
+		serviceCharge = 0;
+	}
+	
 
 	std::cout << "They have to pay $" << perNightRate << " for rent" << std::endl;
 	std::cout << "They have to pay $" << serviceCharge << " for the room service." << std::endl;
