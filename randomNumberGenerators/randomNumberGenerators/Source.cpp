@@ -1,6 +1,6 @@
 //Random Number Generator
 //Andrew McKenzie
-//Date:
+//Date: 4/18/2017
 
 #include <iostream>
 #include <cstdlib>
@@ -27,6 +27,8 @@ int main()
 		{
 			std::cout << " " << std::endl;
 			std::cout << "The computer guessed "<< die << "!" << std::endl;
+			std::cout << " 'I GOT IT RIGHT HUMAN!' " << std::endl;
+			std::cout << "                        ~Computer " << std::endl;
 			correct = true;
 		}
 		else if (die > number)
@@ -46,8 +48,7 @@ int main()
 	} while (chances != 5);
 
 	std::cout << " " << std::endl;
-	std::cout << " 'I GOT IT RIGHT HUMAN!' " << std::endl;
-	std::cout << "                        ~Computer " << std::endl;
+	
 
 	system("pause");
 	return 0;
