@@ -38,17 +38,6 @@ int main()
 					{
 						std::cout << " " << std::endl;
 						std::cout << "You got it right!" << std::endl;
-					//	std::cout << "Continue or Exit.... " << std::endl;
-					//	std::cin >> contStop;
-					//	if (contStop == "Continue")
-					//	{
-					//		difficulty == "Easy";
-					//	}
-					//	else if (contStop == "Exit")
-					//	{
-					//		std::cout << "What difficulty do you want? Easy, Medium, Hard." << std::endl;
-					//		std::cin >> difficulty;
-					//	}
 					}
 					else if (number > die)
 					{
@@ -61,11 +50,10 @@ int main()
 						std::cout << "You chose too low!" << std::endl;
 					}
 					std::cout << "You have used " << i << " out of 5 chances" << std::endl;
-					std::cout << "The number was " << die << std::endl;
 					std::cout << " " << std::endl;
 
-			} while (i != 5 || number == die);
-			
+			} while (i != 5);
+			std::cout << "The number was " << die << std::endl;
 		}
 	}
 
@@ -76,14 +64,34 @@ int main()
 			srand(static_cast<unsigned int>(time(0))); // Random number generator
 			int randomNumber = rand(); // Generate random number
 			int die = (randomNumber % 100) + 1; // Get a number between 1 and 100
-			j++;
+			do{
 
-			std::cout << "Choose a number between 1 and 100." << std::endl;
-			std::cin >> number;
-			
+				j++;
 
+				std::cout << "Choose a number between 1 and 100." << std::endl;
+				std::cin >> number;
+
+				if (number == die)
+				{
+					std::cout << " " << std::endl;
+					std::cout << "You got it right!" << std::endl;
+				}
+				else if (number > die)
+				{
+					std::cout << " " << std::endl;
+					std::cout << "You chose too high!" << std::endl;
+				}
+				else
+				{
+					std::cout << " " << std::endl;
+					std::cout << "You chose too low!" << std::endl;
+				}
 				std::cout << "You have used " << j << " out of 5 chances" << std::endl;
-			}
+				std::cout << " " << std::endl;
+
+			} while (j != 5);
+			std::cout << "The number was " << die << std::endl;
+		}
 		
 	}
 	
@@ -94,11 +102,33 @@ int main()
 			srand(static_cast<unsigned int>(time(0))); // Random number generator
 			int randomNumber = rand(); // Generate random number
 			int die = (randomNumber % 200) + 1; // Get a number between 1 and 200
-			l++;
+			do{
 
-			std::cout << "Choose a number between 1 and 200." << std::endl;
-			std::cin >> number;
-			std::cout << "You have used " << l << " out of 5 chances" << std::endl;
+				l++;
+
+				std::cout << "Choose a number between 1 and 200." << std::endl;
+				std::cin >> number;
+
+				if (number == die)
+				{
+					std::cout << " " << std::endl;
+					std::cout << "You got it right!" << std::endl;
+				}
+				else if (number > die)
+				{
+					std::cout << " " << std::endl;
+					std::cout << "You chose too high!" << std::endl;
+				}
+				else
+				{
+					std::cout << " " << std::endl;
+					std::cout << "You chose too low!" << std::endl;
+				}
+				std::cout << "You have used " << l << " out of 5 chances" << std::endl;
+				std::cout << " " << std::endl;
+
+			} while (l != 5);
+			std::cout << "The number was " << die << std::endl;
 		}
 	}
 
