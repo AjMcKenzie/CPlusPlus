@@ -7,27 +7,33 @@
 #include <ctime>
 #include <string>
 
+int getRandomNumber()
+{
+	srand(static_cast<unsigned int>(time(0))); // Random number generator
+	int randomNumber = rand(); // Generate random number
+	int die = (randomNumber % 100) + 1; // Get a number between 1 and 100
+	return die;
+}
+
 int main()
 {
 	int number;
 	int chances = 0;
 	bool correct;
-
+	int z;
 
 	do{
 		std::cout << "Pick a number between 1 and 100." << std::endl;
 		std::cin >> number;
-		srand(static_cast<unsigned int>(time(0))); // Random number generator
-		int randomNumber = rand(); // Generate random number
-		int die = (randomNumber % 100) + 1; // Get a number between 1 and 100
+		z = getRandomNumber();
 		chances ++; // chances = chances + 1;
 		
-		if (number == die)
+		if (number == z)
 		{
-			std::cout << "You guessed "<< die << "!" << std::endl;
+			std::cout << "You guessed it right! It was "<< z << "!" << std::endl;
 			correct = true;
 		}
-		else if (number > die)
+		else if (number > z)
 		{
 			std::cout << "You chose too high!" << std::endl;
 		}
@@ -37,7 +43,7 @@ int main()
 		}
 		
 		std::cout << "You have used " << chances << " of 5 chances." << std::endl;
-		std::cout << "The number was " << die << "!" << std::endl;
+		std::cout << "The number was " << z << "!" << std::endl;
 		std::cout << " " << std::endl;
 
 	} while (chances != 5);
