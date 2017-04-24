@@ -1,6 +1,6 @@
 //Random Number Generator
 //Andrew McKenzie
-//Date: 4/18/2017
+//Date: 4/24/2017
 
 #include <iostream>
 #include <cstdlib>
