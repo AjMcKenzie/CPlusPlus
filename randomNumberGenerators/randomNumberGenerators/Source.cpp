@@ -13,41 +13,36 @@ int main()
 	int chances = 0;
 	bool correct;
 
-	std::cout << "Pick a number between 1 and 10." << std::endl;
-	std::cin >> number;
-	do{
 
+	do{
+		std::cout << "Pick a number between 1 and 100." << std::endl;
+		std::cin >> number;
 		srand(static_cast<unsigned int>(time(0))); // Random number generator
 		int randomNumber = rand(); // Generate random number
-		int die = (randomNumber % 10) + 1; // Get a number between 1 and 10
+		int die = (randomNumber % 100) + 1; // Get a number between 1 and 100
 		chances ++; // chances = chances + 1;
-		std::cout << "The number the computer guessed is " << die << std::endl;
 		
-		if (die == number)
+		if (number == die)
 		{
-			std::cout << " " << std::endl;
-			std::cout << "The computer guessed "<< die << "!" << std::endl;
-			std::cout << " 'I GOT IT RIGHT HUMAN!' " << std::endl;
-			std::cout << "                        ~Computer " << std::endl;
+			std::cout << "You guessed "<< die << "!" << std::endl;
 			correct = true;
 		}
-		else if (die > number)
+		else if (number > die)
 		{
-			std::cout << " " << std::endl;
-			std::cout << "It chose too high!" << std::endl;
+			std::cout << "You chose too high!" << std::endl;
 		}
 		else
 		{
-			std::cout << " " << std::endl;
-			std::cout << "It chose too low!" << std::endl;
+			std::cout << "You chose too low!" << std::endl;
 		}
 		
-		std::cout << "It has used " << chances << " of 5 chances." << std::endl;
-		
+		std::cout << "You have used " << chances << " of 5 chances." << std::endl;
+		std::cout << "The number was " << die << "!" << std::endl;
+		std::cout << " " << std::endl;
 
 	} while (chances != 5);
-
-	std::cout << " " << std::endl;
+	
+		
 	
 
 	system("pause");
