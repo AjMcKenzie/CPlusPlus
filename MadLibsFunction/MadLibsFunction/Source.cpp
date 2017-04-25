@@ -10,6 +10,7 @@ int Color()
 	std::string color;
 	std::cout << "Type a color: ";
 	std::cin >> color;
+	return;
 	
 }
 
@@ -57,7 +58,7 @@ int main()
 	std::cout << "                                                            " << std::endl;
 	std::cout << "                                                            " << std::endl;
 
-	std::cout << "The " << Color() << " Dragon is the " << wordEst << " Dragon of all. \nIt has " << c << " " << body_parts << ", and a " << animal << " shaped like a " << noun << "." << std::endl;
+	std::cout << "The " << Color() << " Dragon is the " << WordEst() << " Dragon of all. \nIt has " << c << " " << body_parts << ", and a " << animal << " shaped like a " << noun << "." << std::endl;
 	std::cout << "It loves to eat " << plural_noun << ", although it will feast on nearly anything." << std::endl;
 
 	system("pause");
