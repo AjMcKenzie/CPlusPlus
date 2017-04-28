@@ -22,10 +22,10 @@ int main()
 	bool correct;
 	int z;
 
+	z = getRandomNumber();
 	do{
 		std::cout << "Pick a number between 1 and 100." << std::endl;
 		std::cin >> number;
-		z = getRandomNumber();
 		chances ++; // chances = chances + 1;
 		
 		if (number == z)
@@ -43,10 +43,10 @@ int main()
 		}
 		
 		std::cout << "You have used " << chances << " of 5 chances." << std::endl;
-		std::cout << "The number was " << z << "!" << std::endl;
 		std::cout << " " << std::endl;
 
 	} while (chances != 5);
+	std::cout << "The number was " << z << "!" << std::endl;
 	
 		
 	
