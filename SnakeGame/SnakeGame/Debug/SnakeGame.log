@@ -1,0 +1,13 @@
+﻿Build started 5/1/2017 11:12:56 AM.
+     1>Project "C:\Users\am312792\Desktop\CPlusPlus\SnakeGame\SnakeGame\SnakeGame.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\am312792\desktop\cplusplus\snakegame\snakegame\source.cpp(168): error C2065: 'm_hwnd' : undeclared identifier
+     1>c:\users\am312792\desktop\cplusplus\snakegame\snakegame\source.cpp(168): error C2660: 'CreateWindowExW' : function does not take 11 arguments
+     1>c:\users\am312792\desktop\cplusplus\snakegame\snakegame\source.cpp(178): error C2120: 'void' illegal with all types
+     1>Done Building Project "C:\Users\am312792\Desktop\CPlusPlus\SnakeGame\SnakeGame\SnakeGame.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.61
