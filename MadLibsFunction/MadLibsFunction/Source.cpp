@@ -1,61 +1,60 @@
 //Mad Libs Function
 //Andrew McKenzie
-//Date: 4/24/2017
+//Date: 5/2/2017
+
 #include <iostream>
 #include <string>
 
-int Color()
+std::string Color()
 {
 	std::string color;
 	std::cout << "Type a color: ";
 	std::cin >> color;
-	return;
-	
+	return color;
 }
 
-int WordEst()
+std::string WordEst()
 {
 	std::string wordEst;
 	std::cout << "Type a word ending in 'est': ";
 	std::cin >> wordEst;
-	return;
+	return wordEst;
 }
 
-int BodyParts()
+std::string BodyParts()
 {
 	std::string body_parts;
 	std::cout << "Type a plural body part: ";
 	std::cin >> body_parts;
-	return;
+	return body_parts;
 }
 
-int Animal()
+std::string Animal()
 {
 	std::string animal;
 	std::cout << "Type an animal: ";
 	std::cin >> animal;
-	return;
+	return animal;
 }
 
-int Noun()
+std:: string Noun()
 {
 	std::string noun;
 	std::cout << "Type a noun: ";
 	std::cin >> noun;
-	return;
+	return noun;
 }
 
-int PluralNoun()
+std::string PluralNoun()
 {
 	std::string plural_noun;
 	std::cout << "Type a plural noun: ";
 	std::cin >> plural_noun;
-	return;
+	return plural_noun;
 }
 
 int A(int a)
 {
-	int a;
 	std::cout << "Type a number: ";
 	std::cin >> a;
 	return a;
@@ -63,7 +62,6 @@ int A(int a)
 
 int B(int b)
 {
-	int b;
 	std::cout << "Type another number that is less then the first: ";
 	std::cin >> b;
 	return b;
@@ -72,18 +70,16 @@ int B(int b)
 int C(int c, int a, int b)
 {
 	c = a - b;
+	return c;
 }
 
 int main(int a, int b, int c)
 {
 
-
+	
 	std::string color, wordEst, body_parts, animal, noun, plural_noun;
 
-	
-	
-
-	
+		
 	std::cout << "                                                            " << std::endl;
 	std::cout << "                                                            " << std::endl;
 
