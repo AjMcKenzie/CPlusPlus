@@ -29,13 +29,11 @@ int main()
 	}
 
 	double result = 0;
-
-	for (int sub = 0; sub < 4; sub = sub + 1)
+	for (int sub = 0; sub < 4; sub++)
 	{
 		result = sales[sub] + result;
 	}
 	std::cout << "The total for all four regions is: " << result << std::endl;
-	
 
 	system("pause");
 	return 0;
