@@ -5,52 +5,52 @@
 #include <iostream>
 #include <string>
 
-std::string Color()
+int Color()
 {
 	std::string color;
 	std::cout << "Type a color: ";
 	std::cin >> color;
-	return color;
+	return 0;
 }
 
-std::string WordEst()
+int WordEst()
 {
 	std::string wordEst;
 	std::cout << "Type a word ending in 'est': ";
 	std::cin >> wordEst;
-	return wordEst;
+	return 0;
 }
 
-std::string BodyParts()
+int BodyParts()
 {
 	std::string body_parts;
 	std::cout << "Type a plural body part: ";
 	std::cin >> body_parts;
-	return body_parts;
+	return 0;
 }
 
-std::string Animal()
+int Animal()
 {
 	std::string animal;
 	std::cout << "Type an animal: ";
 	std::cin >> animal;
-	return animal;
+	return 0;
 }
 
-std:: string Noun()
+int Noun()
 {
 	std::string noun;
 	std::cout << "Type a noun: ";
 	std::cin >> noun;
-	return noun;
+	return 0;
 }
 
-std::string PluralNoun()
+int PluralNoun()
 {
 	std::string plural_noun;
 	std::cout << "Type a plural noun: ";
 	std::cin >> plural_noun;
-	return plural_noun;
+	return 0;
 }
 
 int A(int a)
